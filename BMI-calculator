@@ -1,0 +1,9 @@
+#bmi calculating Folmula BMI=WEIGHT/HEIGHT (m square)
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+floatheight = float(height)
+floatweight = float(weight)
+
+bmi = int(floatweight/floatheight**2) 
+
+print(bmi)
