@@ -1,0 +1,22 @@
+print("Welcon to ticket Counter\n")
+height = int(input("Enter your Height in cm\n"))
+bill = 0
+if height >=120:
+  
+  print("You can ride\n")
+  age = int(input("Enter your age\n"))
+  if age < 12:
+    bill = 5
+    print("Child Ticket $5\n")
+  elif age<=18:
+    bill = 7
+    print("Youth ticket $7\n")
+  else:
+    bill = 12
+    print("Adult Ticket $12\n")
+  want_photo = input("Do you want to take photo eply with Y or N\n")
+  if want_photo == "Y":
+    bill += 3
+  print(f"Your final bill {bill}")
+else:
+ print("Your Height is not eligible to take ride\n")
